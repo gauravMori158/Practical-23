@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Factory_Design_Pattern.Models
+namespace ClassLibrary.Models
 {
     public class BAL
     {
@@ -20,6 +20,8 @@ namespace Factory_Design_Pattern.Models
         public int GetOverTime (int hours , int EmpId)
         {
             var employee = context.Employees.Include(e => e.Department); 
+            DepartmentFactory indoorFc = new IndoorFactory();
+            Departments It = indoorFc.CreateDepartment();
             
             int Ot= employee.FirstOrDefault(e=>e.Id == EmpId).Department.DepartmentPay * hours;
             return Ot;

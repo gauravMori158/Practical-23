@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Factory_Design_Pattern.Models
+namespace ClassLibrary.Models
 {
     public class Employee
     {

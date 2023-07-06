@@ -1,4 +1,4 @@
-﻿namespace Factory_Design_Pattern.Models
+﻿namespace ClassLibrary.Models
 {
     public abstract class Departments
     {

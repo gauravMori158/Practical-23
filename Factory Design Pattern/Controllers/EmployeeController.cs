@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Factory_Design_Pattern.Models;
+using ClassLibrary.Models;
 
 namespace Factory_Design_Pattern.Controllers
 {
